@@ -1,0 +1,130 @@
+{
+    "Age": {
+        "type": "number",
+        "minimum": 18,
+        "maximum": 90
+    },
+    "Gender": {
+        "type": "radio",
+        "options": [
+            "Male",
+            "Female",
+            "Other"
+        ]
+    },
+    "Appointment Type": {
+        "type": "select",
+        "options": [
+            "Extraction",
+            "Cleaning",
+            "Orthodontics",
+            "Filling",
+            "Root Canal"
+        ]
+    },
+    "Tooth Number": {
+        "type": "select",
+        "options": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+        ]
+    },
+    "Previous No-Shows": {
+        "type": "select",
+        "options": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
+    },
+    "Cancellations": {
+        "type": "select",
+        "options": [
+            0,
+            1,
+            2,
+            3
+        ]
+    },
+    "Rescheduling": {
+        "type": "select",
+        "options": [
+            0,
+            1,
+            2
+        ]
+    },
+    "Weather": {
+        "type": "select",
+        "options": [
+            "Sunny",
+            "Cloudy",
+            "Rainy",
+            "Snowy"
+        ]
+    },
+    "Transportation Options": {
+        "type": "select",
+        "options": [
+            "Walking",
+            "Private Vehicle",
+            "Public Transportation"
+        ]
+    },
+    "Socio-Economic Status": {
+        "type": "select",
+        "options": [
+            "Low",
+            "Medium",
+            "High"
+        ]
+    },
+    "Reminder Sent": {
+        "type": "checkbox",
+        "values": [
+            true,
+            false
+        ]
+    },
+    "Communication Channel": {
+        "type": "select",
+        "options": [
+            "Email",
+            "SMS",
+            "Phone Call"
+        ]
+    }
+}
