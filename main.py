@@ -69,9 +69,9 @@ def predict(model_name : str, data : dict):
 
     try:
         # load model
-        loaded_model = pickle.load(open(f"models/{model_name}.pkl", "rb"))
+        loaded_model = pickle.load(open(f"models/{model_name}.pkl", "rb"),encoding='latin1')
         df = pd.DataFrame(data, index=[0])
-        label_encoders = pickle.load(open("label_encoders.pkl", "rb"))
+        label_encoders = pickle.load(open("label_encoders.pkl", "rb"),encoding='latin1')
         string_vars = ['Gender','Appointment Type', 'Weather', 'Transportation Options', 'Socio-Economic Status',
                'Reminder Sent', 'Communication Channel']
 
@@ -108,4 +108,4 @@ def predict(model_name : str, data : dict):
 
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0")
+    uvicorn.run("main:app", host="0.0.0.0", port=80)
